@@ -13,13 +13,13 @@ const registerTFGItems = (event) => {
 	registerTFGWoodItems(event);
 	registerTFGAircraftItems(event);
 	registerTFGSpaceItems(event);
-	registerTFGMarsItems(event);
 	registerTFGDimensionMarkerItems(event);
 	registerTFGBiotechItems(event);
 	registerTFGWeaponItems(event);
 	registerTFGRockItems(event);
 	registerTFGAquaponicsItems(event);
-	
+	registerTFGAsphaltRoadItems(event);
+
 	event.create('tfg:terra_firma_greg')
 		.tag('c:hidden_from_recipe_viewers')
 
@@ -84,4 +84,9 @@ const registerTFGItems = (event) => {
 		.texture('tfg:item/worked_optical_borosilicate_blank')
 		.tag('tfg:precision_fabricator_dipped_items')
 
+	// Prismatic Related Stuff (Spray Can)
+
+	event.create('tfg:chemical_prismatic_dye')
+		.texture('tfg:item/chemical_prismatic_dye')
+		.tag('forge:dyes/prismatic')
 }
